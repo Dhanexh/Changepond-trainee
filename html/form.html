@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form</h2>
+
+    <form method="post">
+        <label for="fname"> Name :</label>
+        <input type="text" name="name" id="fname" placeholder="Enter name" pattern="^[a-zA-Z ]{3,20}$" required>
+        <br>
+
+        <label for="upass"> Password :</label>
+        <input type="password" name="pass" id="upass" placeholder="Enter password" pattern="^[a-zA-Z1-0 ]{3,20}$" required>
+        <br>
+
+        <label for="uemail"> Email :</label>
+        <input type="email" name="email" id="uemail" placeholder="Enter email"  required>
+        <br>
+
+        <label for="ucontact"> Contact :</label>
+        <input type="tel" name="contact" id="ucontact" placeholder="Enter ph.no"  required>
+        <br>
+
+        <label for="udob"> DOB :</label>
+        <input type="date" name="dob" id="udob" placeholder="Enter DOB"  required>
+        <br>
+
+        <label for="utime"> Time :</label>
+        <input type="time" name="time" id="utime" placeholder="Enter time"  required>
+        <br>
+
+        <label for="uage"> Age :</label>
+        <input type="number" name="age" id="uage" placeholder="Enter age"  required>
+        <br>
+        
+        <label for="ugender"> Gender :</label>
+        <input type="radio" name="gender" id="ugender" value="male">Male
+        <input type="radio" name="gender" id="ugender" value="female">Female
+        <input type="radio" name="gender" id="ugender" value="other">Others
+        <br>
+
+        <label for="uedu"> Education :</label>
+        <input type="checkbox" name="edu" id="uedu" value="sslc">SSLC
+        <input type="checkbox" name="edu" id="uedu" value="hsc">HSC
+        <input type="checkbox" name="edu" id="uedu" value="diplomo">DIPLOMO
+        <input type="checkbox" name="edu" id="uedu" value="ug">UG
+        <input type="checkbox" name="edu" id="uedu" value="pg">PG
+        <input type="checkbox" name="edu" id="uedu" value="master">Master
+        <br>
+
+        <label for="ucourse">Course :</label>
+        <select name="course" id="ucourse" required>
+            <option value="">Select course</option>
+            <option value="react">React</option>
+            <option value="angular">Angular</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

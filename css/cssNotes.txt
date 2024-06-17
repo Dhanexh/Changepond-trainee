@@ -1,0 +1,7 @@
+5/6/24
+
+*css :
+- it is used to design website or webapp
+- it makes webapp attractive, responsive
+- lstest version of css is css3
+- css stands for Cascading Style Sheet

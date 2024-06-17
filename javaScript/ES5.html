@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES5</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <script>
+
+        let msg = "             hello         ";
+        console.log(msg);
+        console.log(msg.trim());
+        console.log(msg.trimStart());
+        console.log(msg.trimEnd());
+
+
+        let courses = ["React", "Angular", "Java", "Python", "NodeJs"];
+
+        // forEach()
+        courses.forEach((val, index) => {
+            document.write(val + " ");
+        });
+        document.write("<br>");
+
+
+
+        // map()
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        let mapOut = num.map((val, index) => {
+            return val * 2;
+        });
+        document.write(mapOut, "<br>");
+
+
+
+        // filter()
+        let filterOut = num.filter((val, index) => {
+            return val % 2 == 0;
+        });
+        document.write(mapOut, "<br>");
+
+
+        // every()
+        let everyOut = num.every((val, index) => {
+            return val < 5;
+        });
+        document.write(everyOut, "<br>");
+
+
+        // some()
+        let someOut = num.some((val, index) => {
+            return val < 5;
+        });
+        document.write(someOut, "<br>");
+        
+        
+        // reduce()
+        let reduceOut = num.reduce((pre, next) => {
+            return pre+ next;
+        });
+        document.write(reduceOut, "<br>");
+
+
+    </script>
+</body>
+
+</html>

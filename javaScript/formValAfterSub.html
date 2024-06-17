@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Val After Sub</title>
+    <style>
+        form {
+            border: 2px solid crimson;
+            width: 350px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 5px;
+            font-size: 18px;
+            background-color: #ffa6a6;
+            box-shadow: 4px 4px 11px;
+            font-family: cursive;
+        }
+
+        .fname,
+        .lname,
+        .email,
+        .pass,
+        .contact {
+            height: 20px;
+            width: 300px;
+            padding: 2px;
+            font-family: cursive;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form name="myform" onsubmit="return checkAll()">
+        <div>
+            <label for="">Enter First Name:</label>
+            <input class="fname" type="text" id="fname"><br>
+
+        </div>
+        <div>
+            <label for="">Enter Last Name:</label>
+            <input class="lname" type="text" id="lname"><br>
+
+        </div>
+        <div>
+            <label for="">Enter Email:</label>
+            <input class="email" type="text" id="email"><br>
+
+        </div>
+        <div>
+            <label for="">Enter Password:</label>
+            <input class="pass" type="text" id="pass"><br>
+
+        </div>
+        <div>
+            <label for="">Enter Gender:</label><br>
+            <input type="radio" id="gender" value="male">Male
+            <input type="radio" id="gender" value="female">Female
+            <input type="radio" id="gender" value="other">Others
+            <br><br>
+        </div>
+        <div>
+            <label for="">Enter Contact:</label>
+            <input class="contact" type="text" id="contact"><br>
+
+        </div>
+        <div>
+            <label for="">Select Qualification:</label><br>
+            <input type="checkbox" name="edu" value="SSLC">SSLC
+            <input type="checkbox" name="edu" value="HSC">HSC
+            <input type="checkbox" name="edu" value="UG">UG
+            <input type="checkbox" name="edu" value="PG">PG
+            <input type="checkbox" name="edu" value="Master">Master
+        </div>
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+
+
+
+    <script>
+        function checkAll() {
+            // let ufname = document.getElementById("fname").value;
+            let ufname = document.myform.fname.value;
+            let regfname = "^[a-zA-Z]{3,15}$";
+            let ulname = document.myform.lname.value;
+            let reglname = "^[a-zA-Z]{1,15}$";
+            let upassword = document.myform.fname.value;
+            let regpass = "^[a-zA-Z]{1,15}$";
+            let fedu = document.myform.edu;
+
+            // fname
+            if (ufname.trim() === "") {
+                window.alert("First name is required");
+                return false;
+            }
+
+            if (!ufname.trim().match(regfname)) {
+                window.alert("First name must contain min-3 and max-15");
+                return false;
+            }
+
+            // lname
+            if (ulname.trim() === "") {
+                window.alert("Last name is required");
+                return false;
+            }
+
+            if (!ulname.trim().match(reglname)) {
+                window.alert("Last name must contain min-1 and max-15");
+                return false;
+            }
+
+            // email
+            if (uemail.trim() === "") {
+                window.alert("Email is required");
+                return false;
+            }
+
+            if (!uemail.trim().match(regemail)) {
+                window.alert("Email must contain min-1 and max-15");
+                return false;
+            }
+
+            // password
+            if (upassword.trim() === "") {
+                window.alert("Password is required");
+                return false;
+            }
+
+            if (!upassword.trim().match(regpass)) {
+                window.alert("Password must contain min-6 and max-15");
+                return false;
+            }
+
+            if (fedu[0].checked == false && fedu[1].checked == false && fedu[2].checked == false && fedu[3].checked == false && fedu[4].checked == false) {
+                window.alert("Please select your qualification");
+                return false;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

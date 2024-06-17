@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // 1.simple function
+        function greeting(){
+            return "Good Morning"
+        }
+
+        document.write(greeting(), "<br>");
+
+
+        // 2.Parameterized function 
+        function welcome(std1, std2){
+            // return "Welcome "+std1;
+            return `Welcome ypu all ${std1} ${std2} in changepond`
+        }
+
+        // document.write(welcome("Dhanesh"), "<br>");
+        // document.write(welcome("Ravindiran"), "<br>");
+        // document.write(welcome("Suresh"), "<br>");
+        document.write(welcome("Sachin","Dhoni"), "<br>");
+
+
+        // 3.Anonymous function 
+        let add = function(num1, num2){
+            return num1+ num2;
+        }
+
+        document.write(add(200, 300),"<br>");
+
+
+        // 4.Arrow function 
+        let sub = (num1, num2) => num1 - num2;
+        // let sub = (num1, num2) =>{
+        //     return num1- num2;
+        // }
+
+        document.write(sub(800,600), "<br>");
+        
+
+
+        // 5.Optinal Parameterized function 
+        let fullName = (fname, mname="", lname="") => {
+            return `${fname} ${mname} ${lname}`;
+        }
+
+        document.write(fullName("Dhoni"), "<br>")
+        document.write(fullName("Mahendra","Dhoni"), "<br>")
+        document.write(fullName("Mahendra","Singh","Dhoni"), "<br>")
+
+
+
+        // 6.Rest Parameterized function 
+        let empList = (...std)=>{
+            return std;
+        }
+
+        document.write(empList("Vijay"," Ajith"," Surya"," Vikram"))
+
+
+
+    </script>
+</body>
+</html>

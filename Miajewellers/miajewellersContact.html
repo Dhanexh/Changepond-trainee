@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .container {
+            background-image: url(../assets/images/jewel2.webp);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: -1%
+        }
+
+        form {
+            width: 343px;
+            padding: 26px 69px;
+            background-color: black;
+            opacity: 0.7;
+            color: white;
+            font-size: 25px;
+            border-radius: 16px;
+            font-family: cursive;
+        }
+
+
+        input {
+            display: flex;
+            width: 297px;
+            height: 34px;
+            font-size: 18px;
+            font-family: cursive;
+            border-radius: 4px;
+            margin-bottom: -22px;
+        }
+
+        select{
+            display: flex;
+            width: 297px;
+            height: 34px;
+            font-size: 18px;
+            font-family: cursive;
+            border-radius: 4px;
+            margin-bottom: -22px;
+        }
+
+        button {
+            font-size: 20px;
+            color: white;
+            background-color: darkblue;
+            border-style: none;
+            padding: 6px 13px;
+            border-radius: 4px;
+            margin: 10px 1px;
+            font-family: cursive;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="post">
+            <label for="uname"> Name :</label>
+            <input type="text" name="name" id="fname" placeholder="Enter name" pattern="^[a-zA-Z ]{3,20}$" required>
+            <br>
+
+            <label for="uemail"> Email :</label>
+            <input type="email" name="email" id="uemail" placeholder="Enter email" required>
+            <br>
+
+            <label for="ucontact"> Contact :</label>
+            <input type="tel" name="contact" id="ucontact" placeholder="Enter ph.no" required>
+            <br>
+
+            <label for="ujewelry">Jewellery :</label>
+            <select name="jewelry" id="ujewelry" required>
+                <option value="">Select Jewelry</option>
+                <option value="chain">Chain</option>
+                <option value="ring">Ring</option>
+                <option value="bracelet">Bracelet</option>
+                <option value="watch">Watch</option>
+                <option value="anklet">anklet</option>
+            </select>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

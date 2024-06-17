@@ -1,0 +1,12 @@
+4/6/2024
+
+HTML :
+- it is used to create structure of webpage or website.
+- its is use to display data to user on browser.
+- it is tag based language.
+- it is hypertext markup langusge
+- its latest version is 5.
+
+
+
+

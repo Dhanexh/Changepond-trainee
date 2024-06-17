@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+    <script>
+        let states = ["Maharastra","Tamilnadu","Goa","Kerala"];
+        // let Mah = states[0];
+        // let Tn = states[1];
+        // let Go = states[2];
+        // let Kr = states[3];
+
+        const [Mh,Tn,Ga,Kr] = states;
+        document.write(`${Mh} ${Tn} ${Ga} ${Kr} <br>`)
+
+
+
+
+        let emp = {empId:101, empName:"Dhanesh", empSalary:100000, empAddress:"Chennai"};
+        const {empId,empName,empSalary,empAddress} = emp;
+        document.write(`${empId} ${empName} ${empSalary} ${empAddress} <br>`)
+
+
+    </script>
+</body>
+</html>

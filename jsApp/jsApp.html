@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jsApp.css">
+    <script src="jsApp.js"></script>
+    <title>Js App</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Calculator -->
+        <form class="form-display-cal" id="cal-id">
+            <label class="cal-label" for=""> Enter First Number:</label><br>
+            <input type="number" name="num1" id="cal-num1"> <br> <br>
+    
+            <label class="cal-label" for=""> Enter Second Number:</label><br>
+            <input type="number" name="num2" id="cal-num2"> <br> <br>
+    
+            <button class="cal-button" type="button" onclick="addition()">Add</button>
+            <button class="cal-button" type="button" onclick="subtraction()">Sub</button>
+            <button class="cal-button" type="button" onclick="multiplication()">Mul</button>
+            <button class="cal-button" type="button" onclick="division()">Div</button> <br><br>
+    
+            <b class="cal-b">Result: </b>
+            <b class="cal-b" id="cal-ans"></b>
+        </form>
+
+
+
+        <!-- Currency -->
+        <form class="form-display-cur" id="cur-id">
+            <br>
+            <label class="cur-label" for=""> Enter INR:</label>
+            <input type="number" name="num" id="num"> <br> <br>
+    
+            <button class="cur-button" type="button" onclick="usd()">Dollar</button>
+            <p class="cur-b">:</p>
+            <b class="cur-b" id="ans1"></b><br>
+
+            <button class="cur-button" type="button" onclick="eur()">Euro</button>
+            <p class="cur-b">: </p>
+            <b class="cur-b" id="ans2"></b><br>
+
+            <button class="cur-button" type="button" onclick="jpy()">Yen</button>
+            <p class="cur-b">: </p>
+            <b class="cur-b" id="ans3"></b><br>
+
+            <button class="cur-button" type="button" onclick="btc()">Bitcoin</button>
+            <p class="cur-b">: </p>
+            <b class="cur-b" id="ans4"></b> <br><br>
+        </form>
+
+
+
+        <!-- Temprature -->
+        <form class="form-display-temp" id="temp-id">
+            <br>
+            <label class="temp-label" for=""> Enter Celcius:</label>
+            <input type="number" name="num" id="numb"> <br> <br>
+    
+            <button class="temp-button" type="button" onclick="farenheit()">Farenheit</button>
+            <p class="temp-b">:</p>
+            <b class="temp-b" id="answ1"></b><br>
+
+            <button class="temp-button" type="button" onclick="kelvin()">Kelvin</button>
+            <p class="temp-b">: </p>
+            <b class="temp-b" id="answ2"></b><br>
+        </form>
+
+
+
+        <!-- Weight -->
+        <form class="form-display-wt" id="wt-id">
+            <br>
+            <label class="wt-label" for=""> Enter weight (g):</label>
+            <input type="number" name="num" id="number"> <br> <br>
+    
+            <button class="wt-button" type="button" onclick="wtConvert()">Convert</button><br>
+            <p class="wt-b">Kg &nbsp;&nbsp;:</p>
+            <b class="wt-b" id="answer1"></b><br>
+
+            <p class="wt-b">Lbs&nbsp;:</p>
+            <b class="wt-b" id="answer2"></b><br>
+
+            <p class="wt-b">Mg&nbsp;&nbsp;:</p>
+            <b class="wt-b" id="answer3"></b><br>
+
+            <p class="wt-b">Ton&nbsp;:</p>
+            <b class="wt-b" id="answer4"></b> <br><br>
+        </form>
+
+
+        <!-- Percentage -->
+        <form class="form-display-perc" id="perc-id">
+            <br><br>
+            <label class="perc-label" for=""> Enter total marks:&nbsp;</label>
+            <input type="number" name="num1" id="num1"> <br> <br>
+    
+            <label class="perc-label" for=""> Enter Obtain mark:</label>
+            <input type="number" name="num2" id="num2"> <br> <br>
+    
+            <button class="perc-button" type="button" onclick="percentage()">Percentage</button>
+            <b class="perc-b">: </b>
+            <b class="perc-b" id="ans"></b>
+        </form>
+
+
+
+        <!-- Age -->
+        <form class="form-display-age" id="age-id">
+            <br><br>
+            <label class="age-label" for=""> Enter DOB&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+            <input class="dob" type="date" name="num" id="age-num"> <br> <br>
+    
+            <button class="age-button" type="button" onclick="age()">Your Age</button>
+            <b class="age-b">: </b>
+            <b class="age-b" id="age-ans"></b>
+        </form>
+
+        
+        <!-- Buttons -->
+        <form class="button-display">
+            <button class="main-button cal" type="button" onclick="calculatorr()">Calculator</button>
+            <button class="main-button cur" type="button" onclick="currencyy()">Currency</button>
+            <button class="main-button temp" type="button" onclick="tempraturee()">Temprature</button> <br>
+            <button class="main-button wt" type="button" onclick="weightt()">Weight</button>
+            <button class="main-button perc" type="button" onclick="percentagee()">Percentage</button>
+            <button class="main-button age" type="button" onclick="agee()">Age</button>
+        </form>
+
+    </div>
+</body>
+</html>

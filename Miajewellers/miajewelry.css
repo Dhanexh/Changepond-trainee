@@ -1,0 +1,111 @@
+.jewelrylogo{
+    height: 80px;
+    border: 3px solid rgb(150, 115, 51);
+    border-radius: 123px;
+}
+
+.title{
+    font-size: 30px;
+    color: #90691f;
+    display: inline;
+    padding: 0px 10px;
+    font-family: cursive;
+}
+
+header{
+    background-color: #ffddb1;
+    display: flex;
+    padding: 10px;
+    margin: -8px;
+    font-family: cursive;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    font-family: cursive;
+}
+
+.d-flex{
+    font-family: cursive;
+}
+
+.modelMessage{
+    display: flex;
+    border: 2px solid #ffdaaf;
+    border-radius: 14px;
+    margin: 6px;
+    padding: 21px;
+    background-color: #ffddb1;
+}
+
+.model{
+    border: 2px solid #ffd3c3;
+    border-radius: 7px;
+}
+
+.message{
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    font-family: cursive;
+    color: #3c2a08;
+}
+
+.promises{
+    background-color: #4e0063;
+    margin: 20px 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.promisetitle{
+    color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+.promisetext{
+    color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+.promiselogo{
+    width: 100px;
+}
+
+.promiselogodiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.promisetextdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer{
+    background-color: #af6b19;
+    margin-top: -18px;
+    padding: 20px;
+
+}
+
+.footertext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color: rgb(26, 24, 21);
+
+}

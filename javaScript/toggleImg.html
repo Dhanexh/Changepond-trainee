@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggleImg</title>
+</head>
+
+<body>
+    <img id="img1" height="300px" src="../assets/images/ring.webp" alt="" ><br>
+    <strong id="imgName">Ring</strong><br>
+    <button type="button" onclick="chainfun()">Chain</button>
+    <button type="button" onclick="watchfun()">Watch</button>
+    <button type="button" onclick="neclacefun()">Neclace</button>
+    <button type="button" onclick="ankletfun()">Anklet</button>
+    <button type="button" onclick="ringfun()">Ring</button>
+
+
+<!-- <img src="../assets/images/anklet.jpg" alt=""> -->
+
+    <script>
+
+        function chainfun() {
+            document.getElementById("img1").src = "../assets/images/chain.webp";
+            document.getElementById("imgName").innerHTML = "Chain";
+        }
+
+        function watchfun() {
+            document.getElementById("img1").src = "../assets/images/watch.jpg";
+            document.getElementById("imgName").innerHTML = "Watch";
+        }
+
+        function neclacefun() {
+            document.getElementById("img1").src = "../assets/images/neclace.jpg";
+            document.getElementById("imgName").innerHTML = "Neclace";
+        }
+
+        function ankletfun() {
+            document.getElementById("img1").src = "../assets/images/anklet.jpg";
+            document.getElementById("imgName").innerHTML = "Anklet";
+        }
+
+        function ringfun() {
+            document.getElementById("img1").src = "../assets/images/ring.webp";
+            document.getElementById("imgName").innerHTML = "Ring";
+        }
+
+
+    </script>
+</body>
+
+</html>

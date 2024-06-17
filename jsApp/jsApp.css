@@ -1,0 +1,180 @@
+.container{
+    border: 2px solid rgb(0, 0, 0);
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 7px;
+    border-radius: 6px;
+    box-shadow: 4px 9px 10px black;
+    background-color: rgb(147, 146, 146);
+}
+
+.form-display-cal,
+.form-display-cur,
+.form-display-temp,
+.form-display-wt,
+.form-display-perc,
+.form-display-age{
+    border: 1px solid rgb(0, 0, 0);
+    height: 195px;
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 7px;
+    padding-left: 16px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.form-display-cal,
+.cal{
+    background-color: rgb(255, 133, 133);
+}
+
+.form-display-cur,
+.cur{
+    background-color: rgb(112, 255, 229);
+}
+
+.form-display-temp,
+.temp{
+    background-color: rgb(135, 255, 131);
+}
+
+.form-display-wt,
+.wt{
+    background-color: rgb(238, 130, 255);
+}
+
+.form-display-perc,
+.perc{
+    background-color: rgb(255, 187, 77);
+}
+
+.form-display-age,
+.age{
+    background-color: rgb(255, 255, 96);
+}
+
+.cal-label,
+.cal-b,
+.cal-button,
+.cur-label,
+.cur-b,
+.cur-button,
+.temp-label,
+.temp-b,
+.temp-button,
+.wt-label,
+.wt-b,
+.wt-button,
+.perc-label,
+.perc-b,
+.perc-button,
+.age-label,
+.age-b,
+.age-button{
+    font-family:cursive;
+    display: inline;
+}
+
+.cal-button{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cur-button{
+    width: 60px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.temp-button{
+    width: 100px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.wt-button{
+    width: 320px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.perc-button{
+    width: 135px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.age-button{
+    width: 90px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cal-button,
+.cur-button,
+.temp-button,
+.wt-button,
+.perc-button,
+.age-button{
+    font-weight: 600;
+}
+
+.cal-button:hover,
+.cur-button:hover,
+.temp-button:hover,
+.wt-button:hover,
+.perc-button:hover,
+.age-button:hover{
+    box-shadow: 0px 0px 5px;
+}
+
+
+
+.main-button:hover{
+    box-shadow: 2px 2px 10px;
+}
+
+.dob{
+    width: 150px;
+    height: 20px;
+    font-family: cursive;
+}
+
+.button-display{
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+.main-button{
+    font-family:cursive;
+    width: 100px;
+    padding: 5px;
+    margin: 7px;
+    font-weight: 800;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#cal-id{
+    display: block;
+}
+
+#cur-id,
+#temp-id,
+#wt-id,
+#perc-id,
+#age-id{
+    display: none;
+}

@@ -1,0 +1,27 @@
+.nav-container{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #2bebfb;
+    width: 330px;
+    overflow: auto;
+}
+
+.nav-container a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 6px 4px;
+}
+
+.nav-container a:hover{
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+
+li{
+    float: left;
+}

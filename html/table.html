@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Simple Table</h2>
+
+    <table border="2%" width="25%">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Post</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Narayanan</td>
+                <td>CEO</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Vishnu</td>
+                <td>Manager</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Ganesh</td>
+                <td>TL</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h2>Table with ColSpan</h2>
+    <table border="2%" width="25%">
+        <tr>
+            <td colspan="2" bgcolor="red">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr><tr>
+            <td>F</td>
+            <td colspan="2" bgcolor="pink">G</td>
+        </tr>
+    </table>
+
+    <h2>Table with RowSpan</h2>
+    <table border="2% " width="25%">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="2">C</td>
+        </tr>
+        <tr>
+            <td rowspan="2">D</td>
+            <td>E</td>
+        </tr><tr>
+            <td>F</td>
+            <td>G</td>
+        </tr>
+    </table>
+
+    <h2>Table with RowSpan and ColSpan</h2>
+    <table border="2% " width="25%">
+        <tr>
+            <td rowspan="2" colspan="2" bgcolor="orange">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr><tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+</body>
+
+</html>

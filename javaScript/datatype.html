@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatype</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        let courses = ["React","Angular","Java","Python"];
+        console.log(courses);
+        console.log(courses.length);
+        console.log(`Array size: ${courses.length-1}`);
+
+        //how to access array data outside
+        console.log(courses[2]);
+        //how to manipulate array data
+        courses[2] = "Advanced Java"
+        console.log(courses);
+
+        // loop
+        for(let i=0; i<courses.length; i++){
+            document.write(courses[i],", ");
+        }
+        document.write("<br>");
+
+        // for of
+        for(let c of courses){
+            document.write(c,",")
+        }
+        document.write("<br>");
+
+        //for in
+        for(let c in courses){
+            document.write(c,",")
+        }
+        document.write("<br>");
+
+        console.log(courses.toString());
+        console.log(courses.join("..."));
+        
+
+    </script>
+</body>
+</html>

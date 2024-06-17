@@ -1,0 +1,9 @@
+7/6/2024
+
+JavaScript : it is use to add functionality and behaviour into webapp
+            its is interpreted language
+            its is loosly typed language
+
+
+2009 - (ECMA script-5)
+2015 - (ECMA script-6)

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jstask</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Temporary Address</label><br>
+        <textarea name="text1" id="text1"></textarea>
+        <br><br>
+        <button type="button" onclick="same">same</button>
+        <br><br>
+        <label for="">Permanent Address</label><br>
+        <textarea name="text2" id="text2"></textarea>
+    </form>
+
+
+    <script>
+        function same() {
+            let text = document.getElementById("text1").value;
+            document.getElementById("text2").innerHTML = text;
+            document.getElementById("text2").innerHTML;
+            
+        }
+
+    </script>
+</body>
+</html>
