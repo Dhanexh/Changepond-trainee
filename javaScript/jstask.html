@@ -6,11 +6,11 @@
     <title>jstask</title>
 </head>
 <body>
-    <form action="">
+    <form >
         <label for="">Temporary Address</label><br>
         <textarea name="text1" id="text1"></textarea>
         <br><br>
-        <button type="button" onclick="same">same</button>
+        <button type="button" onclick="same()">same</button>
         <br><br>
         <label for="">Permanent Address</label><br>
         <textarea name="text2" id="text2"></textarea>
@@ -20,8 +20,7 @@
     <script>
         function same() {
             let text = document.getElementById("text1").value;
-            document.getElementById("text2").innerHTML = text;
-            document.getElementById("text2").innerHTML;
+            document.getElementById("text2").value = text;
             
         }
 
