@@ -7,10 +7,12 @@ import ReactHooksComp from "../hooks/ReactHooksComp";
 import UseStateHookComp from "../hooks/UseStateHookComp";
 import UseEffectHookComp from "../hooks/UseEffectHookComp";
 import MainDashboardComp from "../layout/MainDashboardComp";
-import FooterComp from "../layout/FooterComp";
+import Dashboard from "../layout/Dashboard";
 
 const router = createBrowserRouter([
 
+
+    {path:"", element:<Dashboard/>},
     {path:"maindashboard", element:<MainDashboardComp/>, children:[
         // default routing
         {path:"", element:<MySliderComp/>},

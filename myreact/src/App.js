@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
+import Dashboard from './layout/Dashboard';
 // import ClickCounterComp from './components/ClickCounterComp';
 // import HoverCounterComp from './components/HoverCounterComp';
 // import MyCssComp from './components/MyCssComp';
-import MySliderComp from './components/MySliderComp';
+// import MySliderComp from './components/MySliderComp';
 // import ToggleImage from './task/ToggleImage';
 // import ConditionRenComp from './components/ConditionRenComp';
 // import MyImagesComp from './components/MyImagesComp';
@@ -44,6 +45,7 @@ function App() {
       {/* <ClickCounterComp/>
       <HoverCounterComp/> */}
       {/* <MySliderComp/> */}
+      {/* <Dashboard/> */}
     </div>
   );
 }

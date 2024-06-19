@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Outlet } from 'react-router-dom'
 import NavComp from './NavComp'
 import FooterComp from './FooterComp'

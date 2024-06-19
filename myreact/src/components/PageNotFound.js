@@ -6,7 +6,7 @@ const PageNotFound = () => {
         <div>
             <h1 style={{color:"red",textAlign:"center"}}>404...........Page Not Found</h1>
             <p style={{color:"green",textAlign:"center"}}>Try another Routing<br/>
-            <img src={staticData.pageNotFound} />
+            <img src={staticData.pageNotFound} alt='' />
             </p>
             
         </div>
