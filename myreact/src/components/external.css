@@ -1,0 +1,6 @@
+.imgProp{
+    height: 400px;
+    border: 3px solid rgb(0, 38, 255);
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px ;
+}

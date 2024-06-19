@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import ChildComp from './ChildComp'
 
 export class ParentComp extends Component {
@@ -17,14 +17,14 @@ export class ParentComp extends Component {
     
     render() {
         return (
-            <div>
+            <Fragment>
                 <h2>This is Parent Component</h2>
                 <p>Employee name is <strong>{this.state.empName}</strong></p>
                 <p>Employee salary is <strong>{this.state.empSalary}</strong></p>
                 <button type='button' onClick={()=>this.changeData()}>Change</button>
                 <hr/>
                 <ChildComp name={this.state.empName} salary={this.state.empSalary} changeData={this.changeData}></ChildComp>
-            </div>
+            </Fragment>
         )
     }
 }
